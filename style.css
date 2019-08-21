@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: blanchedalmond;
+}
+
+main {
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  height: 90vh;
+  place-items: center;
+  max-width: 1000px;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 992px){
+  main {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+@media screen and (max-width: 667px){
+  main {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (max-width: 425px){
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+.character {
+  text-align: center;
+  align-self: start;
+  position: relative;
+  transition: .5s;
+}
+
+.character:hover {
+  transform: scale(1.2);
+  transition: .5s;
+}
+
+
+span {
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: gray;
+  border: 6px solid red;
+}
+
+.Gryffindor, .Hufflepuff, .Ravenclaw, .circle, .Slytherin {
+   height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: auto; 
+}
+
+.circle {
+  background-color: #FFD79A;
+}
+
+.Gryffindor {
+  background-color: #d30004;
+}
+
+.Hufflepuff {
+  background-color: #f2b800;
+}
+
+.Ravenclaw {
+  background-color: #004e80;
+}
+
+.Slytherin {
+  background-color: #005416;
+}
+
+.Student {
+  border: 5px solid #333;
+}
+
+.Professor {
+  border: 5px solid orange;
+}
+
+.quidditch {
+  background-color: gold;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  border: 2px solid #003e51;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  color: #333;
+font-family: 'Mystery Quest', cursive; 
+/* font-family: 'Underdog', cursive; */
+}
+
+.name {
+  font-size: 12px;
+}
