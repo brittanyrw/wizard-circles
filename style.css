@@ -10,10 +10,10 @@ main {
   margin: 20px auto;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(10, 1fr);
-  height: 90vh;
+  /* grid-template-rows: repeat(10, 1fr); */
+  /* height: 90vh; */
   place-items: center;
-  max-width: 1000px;
+  max-width: 1200px;
   font-family: sans-serif;
   font-size: 16px;
 }
@@ -40,6 +40,8 @@ main {
   text-align: center;
   align-self: start;
   transition: .5s;
+  background-color:blanchedalmond;
+  padding: 10px;
 }
 
 .character:hover {
@@ -106,7 +108,7 @@ main {
 }
 
 .portrait .wrapper {
-  background-color: #02857D;
+  background-color: dimgray;
 }
 
 .muggle .wrapper {
@@ -152,7 +154,7 @@ h1 {
 }
 
 .name {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .ledgend {
