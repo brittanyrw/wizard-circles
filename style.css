@@ -40,7 +40,6 @@ main {
 .character {
   text-align: center;
   align-self: start;
-  position: relative;
   transition: .5s;
 }
 
@@ -59,8 +58,8 @@ span {
   border: 6px solid red;
 }
 
-.Gryffindor, .Hufflepuff, .Ravenclaw, .circle, .Slytherin {
-   height: 40px;
+.circle {
+height: 40px;
   width: 40px;
   border-radius: 50%;
   margin: auto; 
@@ -70,39 +69,59 @@ span {
   background-color: #FFD79A;
 }
 
-.Gryffindor {
+.Gryffindor .circle {
   background-color: #d30004;
 }
 
-.Hufflepuff {
+.Hufflepuff .circle {
   background-color: #f2b800;
 }
 
-.Ravenclaw {
+.Ravenclaw .circle {
   background-color: #004e80;
 }
 
-.Slytherin {
+.Slytherin .circle {
   background-color: #005416;
 }
 
-.Student {
+.Student .circle {
   border: 5px solid #333;
 }
 
-.Professor {
+.Professor .circle {
   border: 5px solid orange;
 }
 
 .quidditch {
-  background-color: gold;
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
   position: absolute;
-  right: 20px;
-  top: 10px;
-  border: 2px solid #003e51;
+  height: 15px;
+  width: 30px;
+  background-color: white;
+  content: '';
+  top: 13px;
+  left: -4px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.quidditch:after {
+    content: '';
+    background-color: gold;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    position: absolute;
+    left: 4px;
+    top: -3px;
+    border: 2px solid #003e51;
+}
+
+.wrapper {
+    position: relative; 
+    height: 40px;
+    width: 40px;
+    margin: auto;
 }
 
 h1 {
@@ -116,3 +135,10 @@ font-family: 'Mystery Quest', cursive;
 .name {
   font-size: 12px;
 }
+
+
+/* gray - 37392E
+dark gray - 2B2D42
+tan - FFD289
+light blue - 86A5D9
+light green - 87A330 */
