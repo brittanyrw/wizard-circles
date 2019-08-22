@@ -1,729 +1,724 @@
-// Gryffindor - red
-// Ravenclaw House - blue
-// Slytherin House - green
-// Helga Hufflepuff - gold
-// Magical Creature - orange
-// Muggle - purple
-// No House - pink
-// Unknown - gray
-
 const people = [
     {
-        "Name": "Harry Potter",
-        "House": "Gryffindor",
-        "Type": "Student",
-        "Quidditch": "TRUE",
-        "Death Eater": ""
+        "name": "Harry Potter",
+        "house": "gryffindor",
+        "type": "student",
+        "quidditch": true,
+        "deathEater": null
     },
     {
-        "Name": "Ron Weasley",
-        "House": "Gryffindor",
-        "Type": "Student",
-        "Quidditch": "TRUE",
-        "Death Eater": ""
+        "name": "Ron Weasley",
+        "house": "gryffindor",
+        "type": "student",
+        "quidditch": true,
+        "deathEater": null
     },
     {
-        "Name": "Hermione Granger",
-        "House": "Gryffindor",
-        "Type": "Student",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Hermione Granger",
+        "house": "gryffindor",
+        "type": "student",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Albus Dumbledore",
-        "House": "Gryffindor",
-        "Type": "Professor",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Albus Dumbledore",
+        "house": "gryffindor",
+        "type": "professor",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Rubeus Hagrid",
-        "House": "Gryffindor",
-        "Type": "Professor",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Rubeus Hagrid",
+        "house": "gryffindor",
+        "type": "professor",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Severus Snape",
-        "House": "Slytherin",
-        "Type": "Professor",
-        "Quidditch": "",
-        "DeathEater": "TRUE"
+        "name": "Severus Snape",
+        "house": "slytherin",
+        "type": "professor",
+        "quidditch": null,
+        "deathEater": true
     },
     {
-        "Name": "Voldemort",
-        "House": "Slytherin",
-        "Type": "Baddie",
-        "Quidditch": "",
-        "DeathEater": "TRUE"
+        "name": "Voldemort",
+        "house": "slytherin",
+        "type": "",
+        "quidditch": null,
+        "deathEater": true
     },
     {
-        "Name": "Sirius Black",
-        "House": "Gryffindor",
-        "Type": "",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Sirius Black",
+        "house": "gryffindor",
+        "type": "",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Draco Malfoy",
-        "House": "Slytherin",
-        "Type": "Student",
-        "Quidditch": "TRUE",
-        "DeathEater": "TRUE"
+        "name": "Draco Malfoy",
+        "house": "slytherin",
+        "type": "student",
+        "quidditch": true,
+        "deathEater": true
     },
     {
-        "Name": "Fred Weasley",
-        "House": "Gryffindor",
-        "Type": "Student",
-        "Quidditch": "TRUE",
-        "Death Eater": ""
+        "name": "Fred Weasley",
+        "house": "gryffindor",
+        "type": "student",
+        "quidditch": true,
+        "deathEater": null
     },
     {
-        "Name": "Remus Lupin",
-        "House": "Gryffindor",
-        "Type": "Professor",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Remus Lupin",
+        "house": "gryffindor",
+        "type": "professor",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "George Weasley",
-        "House": "Gryffindor",
-        "Type": "Student",
-        "Quidditch": "TRUE",
-        "Death Eater": ""
+        "name": "George Weasley",
+        "house": "gryffindor",
+        "type": "student",
+        "quidditch": true,
+        "deathEater": null
     },
     {
-        "Name": "Neville Longbottom",
-        "House": "Gryffindor",
-        "Type": "Student",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Neville Longbottom",
+        "house": "gryffindor",
+        "type": "student",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Arthur Weasley",
-        "House": "Gryffindor",
-        "Type": "Ministry",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Arthur Weasley",
+        "house": "gryffindor",
+        "type": "ministry",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Ginny Weasley",
-        "House": "Gryffindor",
-        "Type": "Student",
-        "Quidditch": "TRUE",
-        "Death Eater": ""
+        "name": "Ginny Weasley",
+        "house": "gryffindor",
+        "type": "student",
+        "quidditch": true,
+        "deathEater": null
     },
     {
-        "Name": "Minerva McGonagall",
-        "House": "Gryffindor",
-        "Type": "Professor",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Minerva McGonagall",
+        "house": "gryffindor",
+        "type": "professor",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Molly Weasley",
-        "House": "Gryffindor",
-        "Type": "",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Molly Weasley",
+        "house": "gryffindor",
+        "type": "",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Dolores Umbridge",
-        "House": "Slytherin",
-        "Type": "Professor",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Dolores Umbridge",
+        "house": "slytherin",
+        "type": "professor",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Alastor \"Mad Eye\" Moody",
-        "House": "None",
-        "Type": "Auror",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Alastor \"Mad Eye\" Moody",
+        "house": "none",
+        "type": "auror",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Vernon Dursley",
-        "House": "None",
-        "Type": "Muggle",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Vernon Dursley",
+        "house": "none",
+        "type": "muggle",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Cornelius Fudge",
-        "House": "None",
-        "Type": "Ministry",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Cornelius Fudge",
+        "house": "none",
+        "type": "ministry",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Peter Pettigrew",
-        "House": "Gryffindor",
-        "Type": "",
-        "Quidditch": "",
-        "DeathEater": "TRUE"
+        "name": "peter pettigrew",
+        "house": "gryffindor",
+        "type": "",
+        "quidditch": null,
+        "deathEater": true
     },
     {
-        "Name": "Dobby",
-        "House": "None",
-        "Type": "House Elf",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Dobby",
+        "house": "none",
+        "type": "house-elf",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Dudley Dursley",
-        "House": "None",
-        "Type": "Muggle",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Dudley Dursley",
+        "house": "none",
+        "type": "muggle",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Horace Slughorn",
-        "House": "Slytherin",
-        "Type": "Professor",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Horace Slughorn",
+        "house": "slytherin",
+        "type": "professor",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Percy Weasley",
-        "House": "Gryffindor",
-        "Type": "Ministry",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Percy Weasley",
+        "house": "gryffindor",
+        "type": "ministry",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Luna Lovegood",
-        "House": "Ravenclaw",
-        "Type": "Student",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Luna Lovegood",
+        "house": "ravenclaw",
+        "type": "student",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Cedric Diggory",
-        "House": "Hufflepuff",
-        "Type": "Student",
-        "Quidditch": "TRUE",
-        "Death Eater": ""
+        "name": "Cedric Diggory",
+        "house": "hufflepuff",
+        "type": "student",
+        "quidditch": true,
+        "deathEater": null
     },
     {
-        "Name": "Petunia Dursley",
-        "House": "None",
-        "Type": "Muggle",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "petunia Dursley",
+        "house": "none",
+        "type": "muggle",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Kreacher",
-        "House": "None",
-        "Type": "House Elf",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Kreacher",
+        "house": "none",
+        "type": "house-elf",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Bill Weasley",
-        "House": "Gryffindor",
-        "Type": "Gringotts",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Bill Weasley",
+        "house": "gryffindor",
+        "type": "",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Bartemius Crouch, Sr.",
-        "House": "None",
-        "Type": "Ministry",
-        "Quidditch": "",
-        "DeathEater": "TRUE"
+        "name": "Bartemius Crouch, Sr.",
+        "house": "none",
+        "type": "ministry",
+        "quidditch": null,
+        "deathEater": true
     },
     {
-        "Name": "Argus Filch",
-        "House": "",
-        "Type": "Staff",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Argus Filch",
+        "house": "none",
+        "type": "staff",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Viktor Krum",
-        "House": "None",
-        "Type": "Student",
-        "Quidditch": "TRUE",
-        "Death Eater": ""
+        "name": "Viktor Krum",
+        "house": "none",
+        "type": "student",
+        "quidditch": true,
+        "deathEater": null
     },
     {
-        "Name": "Gilderoy Lockhart",
-        "House": "Ravenclaw",
-        "Type": "Professor",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Gilderoy Lockhart",
+        "house": "ravenclaw",
+        "type": "professor",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Sybill Trelawney",
-        "House": "Ravenclaw",
-        "Type": "Professor",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Sybill Trelawney",
+        "house": "ravenclaw",
+        "type": "professor",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Fleur Delacour",
-        "House": "None",
-        "Type": "Student",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Fleur Delacour",
+        "house": "none",
+        "type": "student",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Lucius Malfoy",
-        "House": "Slytherin",
-        "Type": "",
-        "Quidditch": "",
-        "DeathEater": "TRUE"
+        "name": "Lucius Malfoy",
+        "house": "slytherin",
+        "type": "",
+        "quidditch": null,
+        "deathEater": true
     },
     {
-        "Name": "Ludo Bagman",
-        "House": "",
-        "Type": "Ministry",
-        "Quidditch": "TRUE",
-        "Death Eater": ""
+        "name": "Ludo Bagman",
+        "house": "",
+        "type": "ministry",
+        "quidditch": true,
+        "deathEater": null
     },
     {
-        "Name": "Nymphadora Tonks",
-        "House": "Hufflepuff",
-        "Type": "Auror",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Nymphadora Tonks",
+        "house": "hufflepuff",
+        "type": "auror",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Gregory Goyle",
-        "House": "Slytherin",
-        "Type": "Student",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Gregory Goyle",
+        "house": "slytherin",
+        "type": "student",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Vincent Crabbe",
-        "House": "Slytherin",
-        "Type": "Student",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Vincent Crabbe",
+        "house": "slytherin",
+        "type": "student",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Bellatrix Lestrange",
-        "House": "Slytherin",
-        "Type": "",
-        "Quidditch": "",
-        "DeathEater": "TRUE"
+        "name": "Bellatrix Lestrange",
+        "house": "slytherin",
+        "type": "",
+        "quidditch": null,
+        "deathEater": true
     },
     {
-        "Name": "Cho Chang",
-        "House": "Ravenclaw",
-        "Type": "Student",
-        "Quidditch": "TRUE",
-        "Death Eater": ""
+        "name": "Cho Chang",
+        "house": "ravenclaw",
+        "type": "student",
+        "quidditch": true,
+        "deathEater": null
     },
     {
-        "Name": "Dean Thomas",
-        "House": "Gryffindor",
-        "Type": "Student",
-        "Quidditch": "TRUE",
-        "Death Eater": ""
+        "name": "Dean Thomas",
+        "house": "gryffindor",
+        "type": "student",
+        "quidditch": true,
+        "deathEater": null
     },
     {
-        "Name": "Oliver Wood",
-        "House": "Gryffindor",
-        "Type": "Student",
-        "Quidditch": "TRUE",
-        "Death Eater": ""
+        "name": "Oliver Wood",
+        "house": "gryffindor",
+        "type": "student",
+        "quidditch": true,
+        "deathEater": null
     },
     {
-        "Name": "Hedwig",
-        "House": "None",
-        "Type": "Pet",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Hedwig",
+        "house": "none",
+        "type": "pet",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "James Potter",
-        "House": "Gryffindor",
-        "Type": "",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "James Potter",
+        "house": "gryffindor",
+        "type": "",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Rita Skeeter",
-        "House": "None",
-        "Type": "",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Rita Skeeter",
+        "house": "none",
+        "type": "",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Seamus Finnigan",
-        "House": "Gryffindor",
-        "Type": "Student",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Seamus Finnigan",
+        "house": "gryffindor",
+        "type": "student",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Igor Karkaroff",
-        "House": "None",
-        "Type": "Professor",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Igor Karkaroff",
+        "house": "none",
+        "type": "professor",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Peeves",
-        "House": "None",
-        "Type": "Ghost",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Peeves",
+        "house": "none",
+        "type": "ghost",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Winky",
-        "House": "None",
-        "Type": "House Elf",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Winky",
+        "house": "none",
+        "type": "house-elf",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Crookshanks",
-        "House": "None",
-        "Type": "Pet",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Crookshanks",
+        "house": "none",
+        "type": "pet",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Poppy Pomfrey",
-        "House": "None",
-        "Type": "Staff",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Poppy Pomfrey",
+        "house": "none",
+        "type": "staff",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Rufus Scrimgeour",
-        "House": "None",
-        "Type": "Ministry",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Rufus Scrimgeour",
+        "house": "none",
+        "type": "ministry",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Mundungus Fletcher",
-        "House": "",
-        "Type": "",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Mundungus Fletcher",
+        "house": "",
+        "type": "",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Lavender Brown",
-        "House": "Gryffindor",
-        "Type": "Student",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Lavender Brown",
+        "house": "gryffindor",
+        "type": "student",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Griphook",
-        "House": "None",
-        "Type": "Gringotts",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Griphook",
+        "house": "none",
+        "type": "",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Filius Flitwick",
-        "House": "Ravenclaw",
-        "Type": "",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Filius Flitwick",
+        "house": "ravenclaw",
+        "type": "",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Buckbeak",
-        "House": "",
-        "Type": "",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Buckbeak",
+        "house": "",
+        "type": "",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Angelina Johnson",
-        "House": "Gryffindor",
-        "Type": "",
-        "Quidditch": "TRUE",
-        "Death Eater": ""
+        "name": "Angelina Johnson",
+        "house": "gryffindor",
+        "type": "",
+        "quidditch": true,
+        "deathEater": null
     },
     {
-        "Name": "Parvati Patil",
-        "House": "Gryffindor",
-        "Type": "Student",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Parvati Patil",
+        "house": "gryffindor",
+        "type": "student",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Lily Potter",
-        "House": "Gryffindor",
-        "Type": "",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Lily Potter",
+        "house": "gryffindor",
+        "type": "",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Xenophilius Lovegood",
-        "House": "",
-        "Type": "",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Xenophilius Lovegood",
+        "house": "ravenclaw",
+        "type": "",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Nearly Headless Nick",
-        "House": "",
-        "Type": "Ghost",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Nearly Headless Nick",
+        "house": "",
+        "type": "ghost",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Quirinus Quirrell",
-        "House": "Ravenclaw",
-        "Type": "",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Quirinus Quirrell",
+        "house": "ravenclaw",
+        "type": "",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Moaning Myrtle",
-        "House": "Ravenclaw",
-        "Type": "Ghost",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Moaning Myrtle",
+        "house": "ravenclaw",
+        "type": "ghost",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Garrick Ollivander",
-        "House": "Ravenclaw",
-        "Type": "",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Garrick Ollivander",
+        "house": "ravenclaw",
+        "type": "",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Katie Bell",
-        "House": "Gryffindor",
-        "Type": "Student",
-        "Quidditch": "TRUE",
-        "Death Eater": ""
+        "name": "Katie Bell",
+        "house": "gryffindor",
+        "type": "student",
+        "quidditch": true,
+        "deathEater": null
     },
     {
-        "Name": "Olympe Maxime",
-        "House": "",
-        "Type": "",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Olympe Maxime",
+        "house": "",
+        "type": "",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Charlie Weasley",
-        "House": "Gryffindor",
-        "Type": "",
-        "Quidditch": "TRUE",
-        "Death Eater": ""
+        "name": "Charlie Weasley",
+        "house": "gryffindor",
+        "type": "",
+        "quidditch": true,
+        "deathEater": null
     },
     {
-        "Name": "Lee Jordan",
-        "House": "Gryffindor",
-        "Type": "",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Lee Jordan",
+        "house": "gryffindor",
+        "type": "",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Kingsley Shacklebolt",
-        "House": "",
-        "Type": "Auror",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Kingsley Shacklebolt",
+        "house": "",
+        "type": "auror",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Fang",
-        "House": "",
-        "Type": "",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Fang",
+        "house": "",
+        "type": "",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Fenrir Greyback",
-        "House": "",
-        "Type": "",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Fenrir Greyback",
+        "house": "none",
+        "type": "",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Ernie MacMillan",
-        "House": "Hufflepuff",
-        "Type": "",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Ernie MacMillan",
+        "house": "hufflepuff",
+        "type": "student",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Pomona Sprout",
-        "House": "Hufflepuff",
-        "Type": "",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Pomona Sprout",
+        "house": "hufflepuff",
+        "type": "professor",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Phineas Nigellus Black",
-        "House": "",
-        "Type": "",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Phineas Nigellus Black",
+        "house": "slytherin",
+        "type": "professor",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Narcissa Malfoy",
-        "House": "",
-        "Type": "",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Narcissa Malfoy",
+        "house": "slytherin",
+        "type": "",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Stan Shunpike",
-        "House": "",
-        "Type": "",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Stan Shunpike",
+        "house": "none",
+        "type": "",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Aberforth Dumbledore",
-        "House": "",
-        "Type": "",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Aberforth Dumbledore",
+        "house": "none",
+        "type": "",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Bathilda Bagshot",
-        "House": "",
-        "Type": "",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Bathilda Bagshot",
+        "house": "none",
+        "type": "professor",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Colin Creevey",
-        "House": "Gryffindor",
-        "Type": "Student",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Colin Creevey",
+        "house": "gryffindor",
+        "type": "student",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Amos Diggory",
-        "House": "",
-        "Type": "",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Amos Diggory",
+        "house": "none",
+        "type": "ministry",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Firenze",
-        "House": "",
-        "Type": "",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Firenze",
+        "house": "none",
+        "type": "professor",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Grawp",
-        "House": "",
-        "Type": "",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Grawp",
+        "house": "none",
+        "type": "magical-creature",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Marge Dursley",
-        "House": "",
-        "Type": "",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Marge Dursley",
+        "house": "none",
+        "type": "muggle",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Gellert Grindelwald",
-        "House": "",
-        "Type": "",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Gellert Grindelwald",
+        "house": "none",
+        "type": "",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Cormac McLaggen",
-        "House": "Gryffindor",
-        "Type": "",
-        "Quidditch": "TRUE",
-        "Death Eater": ""
+        "name": "Cormac McLaggen",
+        "house": "gryffindor",
+        "type": "student",
+        "quidditch": true,
+        "deathEater": null
     },
     {
-        "Name": "The Fat Lady",
-        "House": "",
-        "Type": "",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "The Fat Lady",
+        "house": "gryffindor",
+        "type": "portrait",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Salazar Slytherin",
-        "House": "Slytherin",
-        "Type": "",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Salazar slytherin",
+        "house": "slytherin",
+        "type": "founder",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Marvolo Gaunt",
-        "House": "",
-        "Type": "",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Marvolo Gaunt",
+        "house": "none",
+        "type": "",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Bob Ogden",
-        "House": "",
-        "Type": "",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Bob Ogden",
+        "house": "none",
+        "type": "ministry",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Pansy Parkinson",
-        "House": "Slytherin",
-        "Type": "Student",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Pansy Parkinson",
+        "house": "slytherin",
+        "type": "student",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Fawkes",
-        "House": "None",
-        "Type": "Magical Creature",
-        "Quidditch": "",
-        "Death Eater": ""
+        "name": "Fawkes",
+        "house": "none",
+        "type": "magical-creature",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Frank Bryce",
-        "House": "",
-        "Type": "",
-        "Quidditch": "",
-        "DeathEater": ""
+        "name": "Frank Bryce",
+        "house": "none",
+        "type": "muggle",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Morfin Gaunt",
-        "House": "",
-        "Type": "",
-        "Quidditch": "",
-        "DeathEater": ""
+        "name": "Morfin Gaunt",
+        "house": "none",
+        "type": "",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Godric Gryffindor",
-        "House": "Gryffindor",
-        "Type": "",
-        "Quidditch": "",
-        "DeathEater": ""
+        "name": "Godric gryffindor",
+        "house": "gryffindor",
+        "type": "founder",
+        "quidditch": null,
+        "deathEater": null
     },
     {
-        "Name": "Elphias Doge",
-        "House": "",
-        "Type": "",
-        "Quidditch": "",
-        "DeathEater": ""
+        "name": "Elphias Doge",
+        "house": "none",
+        "type": "ministry",
+        "quidditch": null,
+        "deathEater": null
     }
 ]
 
 
 
 var profileInfo = '';
+var deathEater = '';
+var quidditch = '';
 
 for (var i = 0; i < people.length; i++) {
-    profileInfo += '<div class="character ' + people[i].House + ' ' + people[i].Type + '"><div class="wrapper"><p class="circle"></p>';
-    if (people[i].Quidditch) {
-        profileInfo += '<p class="quidditch"></p>';
+    if(people[i].deathEater) {
+        deathEater = 'death-eater';
     }
-    if (people[i].DeathEater) {
-        profileInfo += '<p class="death-eater"></p>';
+    if (people[i].quidditch) { 
+        quidditch = 'quidditch';
     }
-    profileInfo += '</div><p class="name">' + people[i].Name + '</p></div>';
+    profileInfo += '<div class="character ' + people[i].house + ' ' + people[i].type + ' ' + deathEater + ' ' + quidditch + '"><div class="wrapper"><p class="circle"></p>';
+    profileInfo += '</div><p class="name">' + people[i].name + '</p></div>';
 
+    deathEater = '';
+    quidditch = '';
 }
 
 $('#container').append(profileInfo);

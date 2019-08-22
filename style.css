@@ -59,7 +59,7 @@ span {
 }
 
 .circle {
-height: 40px;
+  height: 40px;
   width: 40px;
   border-radius: 50%;
   margin: auto; 
@@ -67,69 +67,96 @@ height: 40px;
 
 .circle {
   background-color: #FFD79A;
+  margin: auto;
 }
 
-.Gryffindor .circle {
+.gryffindor .circle {
   background-color: #d30004;
 }
 
-.Hufflepuff .circle {
+.hufflepuff .circle {
   background-color: #f2b800;
 }
 
-.Ravenclaw .circle {
+.ravenclaw .circle {
   background-color: #004e80;
 }
 
-.Slytherin .circle {
+.slytherin .circle {
   background-color: #005416;
 }
 
-.Student .circle {
-  border: 5px solid #333;
+
+.student .wrapper {
+  background-color: #333;
 }
 
-.Professor .circle {
-  border: 5px solid orange;
+.professor .wrapper {
+  background-color: orange;
 }
 
-.quidditch {
-  position: absolute;
-  height: 15px;
-  width: 30px;
+.magical-creature .wrapper {
+  background-color: green;
+}
+
+.ministry .wrapper {
+  background-color: grey;
+}
+
+.ghost .wrapper {
+  background-color: teal;
+}
+
+.pet .wrapper {
+  background-color: tomato;
+}
+
+.auror .wrapper {
+  background-color: orangered;
+}
+
+.portrait .wrapper {
+  background-color: turquoise;
+}
+
+.muggle .wrapper {
+  background-color: peru;
+}
+
+.house-elf .wrapper {
+  background-color: lightgray;
+}
+
+.founder .wrapper {
   background-color: white;
-  content: '';
-  top: 13px;
-  left: -4px;
-  border-radius: 50%;
-  border: 2px solid black;
 }
 
-.quidditch:after {
-    content: '';
-    background-color: gold;
-    height: 12px;
-    width: 12px;
-    border-radius: 50%;
-    position: absolute;
-    left: 4px;
-    top: -3px;
-    border: 2px solid #003e51;
+.staff .wrapper {
+  background-color: brown;
+}
+
+.death-eater .circle {
+  border: 5px solid yellowgreen;
+}
+
+.quidditch .wrapper {
+  border: 5px solid hotpink;
 }
 
 .wrapper {
     position: relative; 
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
     margin: auto;
+    display: grid;
+    border-radius: 50%;
 }
 
 h1 {
   text-align: center;
   font-size: 50px;
   color: #333;
-font-family: 'Mystery Quest', cursive; 
-/* font-family: 'Underdog', cursive; */
+  font-family: 'Mystery Quest', cursive; 
 }
 
 .name {
