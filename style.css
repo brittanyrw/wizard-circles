@@ -36,7 +36,6 @@ main {
   }
 }
 
-
 .character {
   text-align: center;
   align-self: start;
@@ -48,16 +47,6 @@ main {
   transition: .5s;
 }
 
-
-span {
-  display: block;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background-color: gray;
-  border: 6px solid red;
-}
-
 .circle {
   height: 40px;
   width: 40px;
@@ -67,6 +56,7 @@ span {
 
 .circle {
   background-color: #FFD79A;
+  /* background-color: #DEB381; */
   margin: auto;
 }
 
@@ -92,39 +82,40 @@ span {
 }
 
 .professor .wrapper {
-  background-color: orange;
+  background-color: lightgray;
 }
 
 .magical-creature .wrapper {
-  background-color: green;
+  background-color: #02857D;
 }
 
 .ministry .wrapper {
-  background-color: grey;
+  background-color: purple;
 }
 
 .ghost .wrapper {
-  background-color: teal;
+  background-color: #A2CDC5;
 }
 
 .pet .wrapper {
-  background-color: tomato;
+  background-color: #AA0056;
 }
 
 .auror .wrapper {
-  background-color: orangered;
+  background-color: #D9A500;
 }
 
 .portrait .wrapper {
-  background-color: turquoise;
+  background-color: #02857D;
 }
 
 .muggle .wrapper {
-  background-color: peru;
+  /* background-color: peru; */
+  background-color: #A77E40;
 }
 
 .house-elf .wrapper {
-  background-color: lightgray;
+  background-color: #6E5699;
 }
 
 .founder .wrapper {
@@ -132,15 +123,16 @@ span {
 }
 
 .staff .wrapper {
-  background-color: brown;
+  /* background-color: brown; */
+  background-color: #8D0000;
 }
 
 .death-eater .circle {
-  border: 5px solid yellowgreen;
+  border: 5px solid #81A400;
 }
 
 .quidditch .wrapper {
-  border: 5px solid hotpink;
+  border: 5px solid #DD889F;
 }
 
 .wrapper {
@@ -163,9 +155,11 @@ h1 {
   font-size: 12px;
 }
 
-
-/* gray - 37392E
-dark gray - 2B2D42
-tan - FFD289
-light blue - 86A5D9
-light green - 87A330 */
+.ledgend {
+  max-width: 1000px;
+  margin: 0 auto 40px auto;
+  border: 2px solid #333;
+  padding: 20px;
+  font-family: arial, sans-serif;
+  font-size: 16px;
+}
