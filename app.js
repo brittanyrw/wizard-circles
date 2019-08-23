@@ -803,20 +803,33 @@ const people = [
 
 
 
-var profileInfo = '';
-var deathEater = '';
-var quidditch = '';
+let profileInfo = '';
+let deathEater = '';
+let quidditch = '';
 
-for (var i = 0; i < people.length; i++) {
-    if(people[i].deathEater) {
-        deathEater = 'death-eater';
-    }
-    if (people[i].quidditch) { 
-        quidditch = 'quidditch';
+for (let i = 0; i < people.length; i++) {
+    let characterClasses = 'character ' + people[i].house + ' ' + people[i].type;
+    let characterStats = '<li class="house ' + people[i].house + '">' + people[i].house + '</li>';
+
+    if (people[i].deathEater) {
+        characterClasses += ' death-eater';
+        characterStats += '<li class="death-eater-stat">Death Eater</li>';
     }
 
-    profileInfo += '<div class="character ' + people[i].house + ' ' + people[i].type + ' ' + deathEater + ' ' + quidditch + '"><div class="wrapper"><p class="circle"></p>';
-    profileInfo += '</div><p class="name">' + people[i].name + '</p><ul class="data"><li>' + people[i].mentions + '</li></ul></div>';
+    if (people[i].type) {
+        characterStats += '<li class="type-stat ' + people[i].type + '">' + people[i].type + '</li>';
+    }
+
+    if (people[i].quidditch) {
+        characterClasses += ' quidditch';
+        characterStats += '<li class="quidditch-stat">Quidditch</li>';
+    }
+
+    profileInfo += '<div class="' + characterClasses + '"><div class="wrapper"><p class="circle"></p></div><p class="name">' + people[i].name + '</p>';
+
+    profileInfo += '<div class="stats-wrapper"><p class="mentions">' + people[i].mentions + '</p><ul class="stats">' +  characterStats + '</ul></div>';
+    
+    profileInfo += '</div>';
 
     deathEater = '';
     quidditch = '';
@@ -825,6 +838,7 @@ for (var i = 0; i < people.length; i++) {
 $('#container').append(profileInfo);
 
 // Hide key
-$('.key').on('click',function(event){
-    console.log('hello');
+$('.toggle-stats').on('click',function(event){
+    $('.stats-wrapper').toggleClass('stats-display');
+    $('.character').toggleClass('stats-open');
 })
